@@ -159,7 +159,7 @@ describe("scoreCalculator", function() {
 
   // should error on array argument with element values above 20
   it("should error on array argument with element values above 20", function() {
-    let arr = ["foo", 2, 3];
+    let arr = [21, 2, 3];
     expect(scoreCalculator.bind(arr)).to.throw();
   });
 });
